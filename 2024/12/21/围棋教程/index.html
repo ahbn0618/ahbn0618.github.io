@@ -1,0 +1,283 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>围棋教程 | 群宝小站</title><meta name="author" content="ahbn0618"><meta name="copyright" content="ahbn0618"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言围棋是世界上最古老的棋类游戏之一，起源于中国，已有数千年的历史。它以规则简单、变化复杂著称，被称为“黑白世界中的宇宙战争”。围棋不仅是一种智力游戏，更是一种艺术和哲学的结合。本文将从零开始，带领你了解围棋的基本规则、技巧和学习路径。 1. 围棋基础知识1.1 围棋棋盘围棋棋盘由 19 条横线和 19 条竖线组成，总共有 361 个交叉点。棋盘也可以根据需要缩小为 13×13 或 9×9，适合初">
+<meta property="og:type" content="article">
+<meta property="og:title" content="围棋教程">
+<meta property="og:url" content="https://ahbn0618.github.io/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="群宝小站">
+<meta property="og:description" content="前言围棋是世界上最古老的棋类游戏之一，起源于中国，已有数千年的历史。它以规则简单、变化复杂著称，被称为“黑白世界中的宇宙战争”。围棋不仅是一种智力游戏，更是一种艺术和哲学的结合。本文将从零开始，带领你了解围棋的基本规则、技巧和学习路径。 1. 围棋基础知识1.1 围棋棋盘围棋棋盘由 19 条横线和 19 条竖线组成，总共有 361 个交叉点。棋盘也可以根据需要缩小为 13×13 或 9×9，适合初">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ahbn0618.github.io/imgpu/mczzpbz.jpg">
+<meta property="article:published_time" content="2024-12-21T10:07:03.000Z">
+<meta property="article:modified_time" content="2024-12-21T10:16:21.325Z">
+<meta property="article:author" content="ahbn0618">
+<meta property="article:tag" content="围棋">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ahbn0618.github.io/imgpu/mczzpbz.jpg"><link rel="shortcut icon" href="/imgpr/ahbn01.ico"><link rel="canonical" href="https://ahbn0618.github.io/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '围棋教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/imgpr/background01.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/imgpr/ahbn01.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/list/"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 朋友</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/imgpu/mczzpbz.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/imgpr/ahbn01.ico" alt="Logo"><span class="site-name">群宝小站</span></a><a class="nav-page-title" href="/"><span class="site-name">围棋教程</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-search"></i><span> 搜索</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/list/"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 图片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 朋友</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">围棋教程<a class="post-edit-link" href="null_posts/围棋教程.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-21T10:07:03.000Z" title="发表于 2024-12-21 18:07:03">2024-12-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-21T10:16:21.325Z" title="更新于 2024-12-21 18:16:21">2024-12-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%95%99%E5%AD%A6/">教学</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>围棋是世界上最古老的棋类游戏之一，起源于中国，已有数千年的历史。它以规则简单、变化复杂著称，被称为“黑白世界中的宇宙战争”。围棋不仅是一种智力游戏，更是一种艺术和哲学的结合。本文将从零开始，带领你了解围棋的基本规则、技巧和学习路径。</p>
+<h2 id="1-围棋基础知识"><a href="#1-围棋基础知识" class="headerlink" title="1. 围棋基础知识"></a>1. 围棋基础知识</h2><h3 id="1-1-围棋棋盘"><a href="#1-1-围棋棋盘" class="headerlink" title="1.1 围棋棋盘"></a>1.1 围棋棋盘</h3><p>围棋棋盘由 19 条横线和 19 条竖线组成，总共有 361 个交叉点。棋盘也可以根据需要缩小为 13×13 或 9×9，适合初学者练习。</p>
+<p>棋盘上的重要标记：</p>
+<p>星位：棋盘上有 9 个“星位”，通常用于布局时的参考点。<br>天元：棋盘中央的星位，称为“天元”。</p>
+<h3 id="1-2-围棋棋子"><a href="#1-2-围棋棋子" class="headerlink" title="1.2 围棋棋子"></a>1.2 围棋棋子</h3><p>围棋棋子分为 黑子 和 白子：</p>
+<p>黑子先下，白子后下，双方交替落子。<br>棋子放置后不能移动或移除，除非在特殊情况下被“提子”。</p>
+<h3 id="1-3-基本规则"><a href="#1-3-基本规则" class="headerlink" title="1.3 基本规则"></a>1.3 基本规则</h3><p>围棋的规则非常简单：</p>
+<p>占地为胜：游戏结束后，占据的地盘（空点）最多的一方获胜。<br>气与提子：<br>每颗棋子放在棋盘上后，与它相邻的空点称为它的“气”。<br>如果一颗棋子或一块棋的“气”被完全封死，这些棋子会被提走。<br>禁入点：如果一个位置的落子会让自己无气，则不能下在那里。<br>打劫：如果某一方刚刚提走对方的棋子，下一手不能立即提回对方，这被称为“打劫”，需要通过其他棋的变化来解劫。</p>
+<h2 id="2-围棋基本技巧"><a href="#2-围棋基本技巧" class="headerlink" title="2. 围棋基本技巧"></a>2. 围棋基本技巧</h2><h3 id="2-1-棋形"><a href="#2-1-棋形" class="headerlink" title="2.1 棋形"></a>2.1 棋形</h3><p>棋形是围棋中围地和取胜的关键。常见棋形包括：</p>
+<p>二连星：两个星位连在一起，适合抢占大范围地盘。<br>大跳：从一个点跳到下一个相邻点，既能扩展地盘，也能保持防守。</p>
+<h3 id="2-2-打入与封锁"><a href="#2-2-打入与封锁" class="headerlink" title="2.2 打入与封锁"></a>2.2 打入与封锁</h3><p>打入：在对方地盘中插入一颗子，破坏对方的布局。<br>封锁：将对方的棋子围住，让其无法逃脱，最终被提子。</p>
+<h3 id="2-3-收官技巧"><a href="#2-3-收官技巧" class="headerlink" title="2.3 收官技巧"></a>2.3 收官技巧</h3><p>围棋的最后阶段称为“收官”，是决定胜负的关键：</p>
+<p>优先占据价值较大的空点。<br>注意边界处的“目数”，避免损失地盘。</p>
+<h2 id="3-围棋学习方法"><a href="#3-围棋学习方法" class="headerlink" title="3. 围棋学习方法"></a>3. 围棋学习方法</h2><h3 id="3-1-初学者阶段"><a href="#3-1-初学者阶段" class="headerlink" title="3.1 初学者阶段"></a>3.1 初学者阶段</h3><p>小棋盘练习：建议使用 9×9 或 13×13 棋盘练习，对初学者来说更加容易理解。<br>熟悉基本规则：重点掌握气、提子、禁入点的概念。<br>模仿棋谱：通过复盘经典棋谱学习高手的布局和思路。</p>
+<h3 id="3-2-提高阶段"><a href="#3-2-提高阶段" class="headerlink" title="3.2 提高阶段"></a>3.2 提高阶段</h3><p>死活题练习：死活是围棋中判断棋子生存的关键，推荐每天练习 10-20 道题。<br>布局学习：学习常见布局如“小目”“星位”“目外”等。<br>对局实战：通过和朋友或 AI 对弈提高实战能力。</p>
+<h3 id="3-3-进阶阶段"><a href="#3-3-进阶阶段" class="headerlink" title="3.3 进阶阶段"></a>3.3 进阶阶段</h3><p>段位赛：参加围棋段位赛，检验学习成果。<br>定式研究：深入研究定式（常见的棋子开局和变化）。<br>名局复盘：复盘古今名家的经典棋局，感受围棋的深度与美感。</p>
+<h2 id="4-推荐围棋工具与资源"><a href="#4-推荐围棋工具与资源" class="headerlink" title="4. 推荐围棋工具与资源"></a>4. 推荐围棋工具与资源</h2><h3 id="4-1-在线围棋平台"><a href="#4-1-在线围棋平台" class="headerlink" title="4.1 在线围棋平台"></a>4.1 在线围棋平台</h3><p>野狐围棋：<code>https://foxwq.com</code><br>野狐围棋是中国最热门的围棋对弈平台之一，支持与 AI 和真人对弈。<br>弈城围棋：<code>http://www.eweiqi.com</code><br>提供在线对局和围棋教学服务。</p>
+<h3 id="4-2-围棋-AI"><a href="#4-2-围棋-AI" class="headerlink" title="4.2 围棋 AI"></a>4.2 围棋 AI</h3><p>KataGo：开源围棋 AI，适合分析棋局和提高水平。<br>Leela Zero：另一款围棋 AI，能够模拟顶级棋手的下法。</p>
+<h3 id="4-3-推荐书籍"><a href="#4-3-推荐书籍" class="headerlink" title="4.3 推荐书籍"></a>4.3 推荐书籍</h3><p>《围棋入门》：适合初学者的基础书籍。<br>《围棋死活大全》：帮助提高围棋死活能力。<br>《名局精解》：复盘经典棋局，理解围棋艺术。</p>
+<h2 id="5-围棋的益处"><a href="#5-围棋的益处" class="headerlink" title="5. 围棋的益处"></a>5. 围棋的益处</h2><p>学习围棋不仅是一种娱乐方式，还能带来以下益处：</p>
+<p>提升逻辑思维能力：围棋需要深入思考，每一步都关系全局。<br>锻炼耐心与专注力：长时间对局培养了专注力。<br>感受传统文化：围棋是中国传统文化的重要组成部分。</p>
+<h2 id="6-总结"><a href="#6-总结" class="headerlink" title="6. 总结"></a>6. 总结</h2><p>围棋看似简单，但变化无穷，是一种蕴含深厚智慧的智力游戏。从入门规则到高段位的追求，每一步都能带来独特的乐趣与挑战。如果你对围棋感兴趣，赶快拿起棋子，开启你的围棋之旅吧！</p>
+<p>愿每一步都落得恰到好处，成为围棋世界的高手！</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://ahbn0618.github.io">ahbn0618</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://ahbn0618.github.io/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/">https://ahbn0618.github.io/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://ahbn0618.github.io" target="_blank">群宝小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%9B%B4%E6%A3%8B/">围棋</a></div><div class="post-share"><div class="social-share" data-image="/imgpu/mczzpbz.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/imgpr/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/imgpr/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/imgpr/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/imgpr/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2024/12/21/uniapp%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" title="uniapp学习路径"><img class="cover" src="/imgpu/mcpbzsar02.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">uniapp学习路径</div></div><div class="info-2"><div class="info-item-1">前言UniApp 是一个基于 Vue.js 的多端开发框架，可以使用一套代码同时发布到小程序、H5、iOS、Android 等多个平台。对于初学者而言，如何从零开始学习并掌握 UniApp？本文将为你提供一个清晰的学习路径。 1. 基础知识准备在学习 UniApp 之前，需要掌握以下基础知识： HTML: 熟悉基本标签、结构和语义化。CSS: 掌握布局（Flexbox、Grid）、常见样式属性，以及移动端适配（如媒体查询）。JavaScript: 熟悉基础语法、ES6+ 特性（如箭头函数、解构赋值、模板字符串等）。Vue.js: 掌握 Vue2 或 Vue3 的基础知识，包括组件化开发、生命周期、数据绑定、指令等。 学习资源推荐：菜鸟教程 HTML&#x2F;CSS&#x2F;JSVue 官方文档 2. 初识 UniApp2.1 UniApp 是什么UniApp 是一个跨平台框架，基于 Vue 语法开发，通过编译转换，可以运行在多个平台。其核心特点包括： 一套代码，多端运行：支持 H5、小程序、App...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/imgpr/ahbn01.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">ahbn0618</div><div class="author-info-description">个人记录小站</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/ahbn0618"><i class="fab fa-github"></i><span>Github</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://pb.nichi.co/budget-slim-jeans" target="_blank" title="微信"><i class="fab fa-weixin" style="color: #497568;"></i></a><a class="social-icon" href="https://qm.qq.com/q/88rwnEhekE" target="_blank" title="QQ"><i class="fab fa-qq" style="color: #497568;"></i></a><a class="social-icon" href="https://m.weibo.cn/u/6182949411?luicode=10000011&amp;lfid=1005056182949411" target="_blank" title="微博"><i class="fab fa-weibo" style="color: #497568;"></i></a><a class="social-icon" href="https://www.acwing.com/user/myspace/index/120136/" target="_blank" title="AcWing"><i class="fab fa-wordpress" style="color: #497568;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎访问本站</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%9B%B4%E6%A3%8B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="toc-number">2.</span> <span class="toc-text">1. 围棋基础知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E5%9B%B4%E6%A3%8B%E6%A3%8B%E7%9B%98"><span class="toc-number">2.1.</span> <span class="toc-text">1.1 围棋棋盘</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E5%9B%B4%E6%A3%8B%E6%A3%8B%E5%AD%90"><span class="toc-number">2.2.</span> <span class="toc-text">1.2 围棋棋子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E5%9F%BA%E6%9C%AC%E8%A7%84%E5%88%99"><span class="toc-number">2.3.</span> <span class="toc-text">1.3 基本规则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%9B%B4%E6%A3%8B%E5%9F%BA%E6%9C%AC%E6%8A%80%E5%B7%A7"><span class="toc-number">3.</span> <span class="toc-text">2. 围棋基本技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E6%A3%8B%E5%BD%A2"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 棋形</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E6%89%93%E5%85%A5%E4%B8%8E%E5%B0%81%E9%94%81"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 打入与封锁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E6%94%B6%E5%AE%98%E6%8A%80%E5%B7%A7"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 收官技巧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%9B%B4%E6%A3%8B%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text">3. 围棋学习方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%88%9D%E5%AD%A6%E8%80%85%E9%98%B6%E6%AE%B5"><span class="toc-number">4.1.</span> <span class="toc-text">3.1 初学者阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%8F%90%E9%AB%98%E9%98%B6%E6%AE%B5"><span class="toc-number">4.2.</span> <span class="toc-text">3.2 提高阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E8%BF%9B%E9%98%B6%E9%98%B6%E6%AE%B5"><span class="toc-number">4.3.</span> <span class="toc-text">3.3 进阶阶段</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%8E%A8%E8%8D%90%E5%9B%B4%E6%A3%8B%E5%B7%A5%E5%85%B7%E4%B8%8E%E8%B5%84%E6%BA%90"><span class="toc-number">5.</span> <span class="toc-text">4. 推荐围棋工具与资源</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%9C%A8%E7%BA%BF%E5%9B%B4%E6%A3%8B%E5%B9%B3%E5%8F%B0"><span class="toc-number">5.1.</span> <span class="toc-text">4.1 在线围棋平台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%9B%B4%E6%A3%8B-AI"><span class="toc-number">5.2.</span> <span class="toc-text">4.2 围棋 AI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8D"><span class="toc-number">5.3.</span> <span class="toc-text">4.3 推荐书籍</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%9B%B4%E6%A3%8B%E7%9A%84%E7%9B%8A%E5%A4%84"><span class="toc-number">6.</span> <span class="toc-text">5. 围棋的益处</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%80%BB%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">6. 总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/" title="围棋教程"><img src="/imgpu/mczzpbz.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="围棋教程"/></a><div class="content"><a class="title" href="/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/" title="围棋教程">围棋教程</a><time datetime="2024-12-21T10:07:03.000Z" title="发表于 2024-12-21 18:07:03">2024-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/12/21/uniapp%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" title="uniapp学习路径"><img src="/imgpu/mcpbzsar02.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uniapp学习路径"/></a><div class="content"><a class="title" href="/2024/12/21/uniapp%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" title="uniapp学习路径">uniapp学习路径</a><time datetime="2024-12-21T09:55:44.000Z" title="发表于 2024-12-21 17:55:44">2024-12-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/12/18/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" title="微信小程序学习路径"><img src="/imgpu/mcjxxlb.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="微信小程序学习路径"/></a><div class="content"><a class="title" href="/2024/12/18/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/" title="微信小程序学习路径">微信小程序学习路径</a><time datetime="2024-12-18T14:22:09.000Z" title="发表于 2024-12-18 22:22:09">2024-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/12/09/AJAX%E6%80%BB%E7%BB%93%E6%96%87%E6%A1%A3/" title="AJAX总结文档"><img src="/imgpu/pbzab01.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AJAX总结文档"/></a><div class="content"><a class="title" href="/2024/12/09/AJAX%E6%80%BB%E7%BB%93%E6%96%87%E6%A1%A3/" title="AJAX总结文档">AJAX总结文档</a><time datetime="2024-12-09T14:40:35.000Z" title="发表于 2024-12-09 22:40:35">2024-12-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/12/09/%E5%85%AD%E7%88%BB%E8%B5%B7%E5%8D%A6%E8%AF%A6%E8%A7%A3/" title="六爻起卦详解"><img src="/imgpu/mczzhh.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="六爻起卦详解"/></a><div class="content"><a class="title" href="/2024/12/09/%E5%85%AD%E7%88%BB%E8%B5%B7%E5%8D%A6%E8%AF%A6%E8%A7%A3/" title="六爻起卦详解">六爻起卦详解</a><time datetime="2024-12-09T13:49:02.000Z" title="发表于 2024-12-09 21:49:02">2024-12-09</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/imgpr/footer02呜咔咔.jpg);"><div id="footer-wrap"><div class="copyright">&copy;2024 By ahbn0618</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+
+  const disqusReset = conf => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: conf
+    })
+  }
+
+  const loadDisqus = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    window.disqus_identifier = isShuoshuo ? path : '/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/'
+    window.disqus_url = isShuoshuo ? location.origin + path : 'https://ahbn0618.github.io/2024/12/21/%E5%9B%B4%E6%A3%8B%E6%95%99%E7%A8%8B/'
+
+    const disqus_config = function () {
+      this.page.url = disqus_url
+      this.page.identifier = disqus_identifier
+      this.page.title = '围棋教程'
+    }
+
+    if (window.DISQUS) disqusReset(disqus_config)
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+
+    btf.addGlobalFn('themeChange', () => disqusReset(disqus_config), 'disqus')
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Disqus' === 'Disqus'
+      ? window.shuoshuoComment = { loadComment: loadDisqus }
+      : window.loadOtherComment = loadDisqus
+    return
+  }
+
+  if ('Disqus' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="ture" data-click="ture"></script><script defer="defer" id="fluttering_ribbon" mobile="ture" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script>(() => {
+  const isChatBtn = false
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const close = () => {
+      Chatra('minimizeWidget')
+      Chatra('hide')
+    }
+
+    const open = () => {
+      Chatra('openChat', true)
+      Chatra('show')
+    }
+
+    window.ChatraSetup = { startHidden: true }
+  
+    window.chatBtnFn = () => {
+      document.getElementById('chatra').classList.contains('chatra--expanded') ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => Chatra('hide'),
+      show: () => Chatra('show')
+    }
+  }
+
+  (function(d, w, c) {
+    w.ChatraID = ''
+    var s = d.createElement('script')
+    w[c] = w[c] || function() {
+      (w[c].q = w[c].q || []).push(arguments)
+    }
+    s.async = true
+    s.src = 'https://call.chatra.io/chatra.js'
+    if (d.head) d.head.appendChild(s)
+  })(document, window, 'Chatra')
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
